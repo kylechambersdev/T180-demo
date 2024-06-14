@@ -73,8 +73,8 @@
         "star_4kbCkh": {
           "type": "star",
           "settings": {
-            "reviews": 4.7,
-            "text": "4.7\/5 based on 6329 reviews"
+            "reviews": 4.4,
+            "text": "\/5 based on 6329 reviews"
           }
         },
         "heading": {
@@ -253,36 +253,38 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_tmErHH": {
-      "type": "image-with-text",
+    "image_with_text_reviews_nC3mFc": {
+      "type": "image-with-text-reviews",
       "blocks": {
-        "heading_zMy8i4": {
+        "heading_gR8EJT": {
           "type": "heading",
           "settings": {
             "heading": "Image with text",
             "heading_size": "h1"
           }
         },
-        "text_tB3fMx": {
+        "text_XWtPt3": {
           "type": "text",
           "settings": {
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text_style": "body"
           }
         },
-        "button_k68Xcq": {
+        "button_LJqzim": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
             "button_link": "",
-            "button_style_secondary": false
+            "button_style_secondary": false,
+            "reviews": 4.5,
+            "text": "\/5 based on 6329 reviews"
           }
         }
       },
       "block_order": [
-        "heading_zMy8i4",
-        "text_tB3fMx",
-        "button_k68Xcq"
+        "heading_gR8EJT",
+        "text_XWtPt3",
+        "button_LJqzim"
       ],
       "settings": {
         "height": "adapt",
@@ -297,6 +299,64 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "testimonials_section_WmVPgh": {
+      "type": "testimonials-section",
+      "blocks": {
+        "column_cniVBN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial-circle.png",
+            "toggle_image": true,
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "stars_count": "4.5",
+            "toggle_review_stars": true
+          }
+        },
+        "column_wxCi9r": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial-circle.png",
+            "toggle_image": true,
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "stars_count": "4",
+            "toggle_review_stars": true
+          }
+        },
+        "column_hB8rrn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testimonial-circle.png",
+            "toggle_image": true,
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        }
+      },
+      "block_order": [
+        "column_cniVBN",
+        "column_wxCi9r",
+        "column_hB8rrn"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "subtitle": "Get inspired by other customers",
+        "heading_alignment": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "swipe_on_mobile": true,
+        "star_color": "#ffcc33",
+        "testimonial_background": "#f3f3f3",
+        "testimonial_section_background": "#f3f3f3",
+        "reviews": 4.7,
+        "text": "\/5 based on 6329 reviews"
       }
     },
     "shipping_bar_peyLzM": {
@@ -365,6 +425,318 @@
         "padding_top": 12,
         "padding_bottom": 12
       }
+    },
+    "collection_list_FAcUfy": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_rigGJz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_BztGAz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_Gefy8d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_rigGJz",
+        "featured_collection_BztGAz",
+        "featured_collection_Gefy8d"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq_section_3M34B6": {
+      "type": "faq-section",
+      "blocks": {
+        "collapsible_row_Githkj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_eMg8LY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_xyK4im": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_fbAbnH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_ptBzrz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_4mEyn9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Githkj",
+        "collapsible_row_eMg8LY",
+        "collapsible_row_xyK4im",
+        "collapsible_row_fbAbnH",
+        "collapsible_row_ptBzrz",
+        "collapsible_row_4mEyn9"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "caption": "test caption",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 28,
+        "padding_bottom": 32
+      }
+    },
+    "instagram_images_WyQ4Jy": {
+      "type": "instagram-images",
+      "blocks": {
+        "logo_image_qQCJBM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kids-playing-at-park.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_BcCBxX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pineapple-party.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_U3YpFm": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/giant-colorful-slide.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_pzhAgW": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fun-at-carnival.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_KBATJf": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/surrounded-by-watermelon.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_E7K77i": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/father-having-lots-of-fun-with-his-kids.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_rfQAhe": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/donut-float-fun.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_y8XGDp": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/friends-splash-and-play-in-water.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_mfYjf7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kids-playing-at-park.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_DKNwhX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/giant-colorful-slide.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_tMdFdq": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/father-having-lots-of-fun-with-his-kids.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_xhJWnj": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fun-at-carnival.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_gPempy": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/surrounded-by-watermelon.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_yQjFx9": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pineapple-party.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_nPJCQQ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/donut-float-fun.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_XRV4xz": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/friends-splash-and-play-in-water.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_qQCJBM",
+        "logo_image_BcCBxX",
+        "logo_image_U3YpFm",
+        "logo_image_pzhAgW",
+        "logo_image_KBATJf",
+        "logo_image_E7K77i",
+        "logo_image_rfQAhe",
+        "logo_image_y8XGDp",
+        "logo_image_mfYjf7",
+        "logo_image_DKNwhX",
+        "logo_image_tMdFdq",
+        "logo_image_xhJWnj",
+        "logo_image_gPempy",
+        "logo_image_yQjFx9",
+        "logo_image_nPJCQQ",
+        "logo_image_XRV4xz"
+      ],
+      "settings": {
+        "title": "Image list",
+        "logo_width": "160px",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_with_reviews_8fkmRp": {
+      "type": "rich-text-with-reviews",
+      "blocks": {
+        "heading_hrnKBe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_YYqXMK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "button_e7izwD": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "star_3GG8zk": {
+          "type": "star",
+          "settings": {
+            "reviews": 3,
+            "text": "\/5 based on #### reviews"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hrnKBe",
+        "text_YYqXMK",
+        "button_e7izwD",
+        "star_3GG8zk"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -373,7 +745,12 @@
     "logo_list_AnMKjh",
     "steps_nxGFYL",
     "featured_collection",
-    "image_with_text_tmErHH",
-    "shipping_bar_peyLzM"
+    "image_with_text_reviews_nC3mFc",
+    "testimonials_section_WmVPgh",
+    "shipping_bar_peyLzM",
+    "collection_list_FAcUfy",
+    "faq_section_3M34B6",
+    "instagram_images_WyQ4Jy",
+    "rich_text_with_reviews_8fkmRp"
   ]
 }

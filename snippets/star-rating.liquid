@@ -39,12 +39,12 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function (){
-const ratings = {{ratingValue}}
+const ratings{{id}} = {{ratingValue}}
 // total number of stars
-const starTotal = 5;
+const starTotal{{id}} = 5;
 
-const starPercentage = (ratings / starTotal) * 100;
-const starPercentageRounded = `${Math.round(starPercentage / 10) * 10}%`
-document.querySelector(` .stars-inner`).style.width = starPercentageRounded;
+const starPercentage{{id}} = (ratings{{id}} / starTotal{{id}}) * 100;
+const starPercentageRounded{{id}} = `${Math.round(starPercentage{{id}} / 10) * 10}%`
+document.querySelector(`#reviews-{{ id }} .stars-inner`).style.width = starPercentageRounded{{id}};
   });
 </script>

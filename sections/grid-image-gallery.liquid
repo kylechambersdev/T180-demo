@@ -1,0 +1,160 @@
+<style>
+  .customCollage {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-column-gap: 15px;
+    padding: 50px;
+    grid-template-columns: repeat(2, 46vw);
+    grid-template-rows: repeat(2, 37vw);
+    grid-template-areas:
+      "a b"
+      "a c";
+    justify-content: center;
+  }
+
+  .collageImageContainer {
+    position: relative;
+    overflow: hidden; /* Hide any overflow from the image */
+  }
+
+  .collageImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .customButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .richText {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+  }
+</style>
+
+<div class="customCollage">
+  {% for block in section.blocks %}
+    <div class="collageImageContainer">
+      <div
+        class="customBlock"
+        style="
+          grid-area:
+          {% case forloop.index %}
+            {% when 1 %} a
+            {% when 2 %} b
+            {% when 3 %} c
+          {% endcase %};
+        "
+      >
+        <img
+          class="collageImage"
+          src="{{ block.settings.collage_image | img_url: 'large' }}"
+          loading="lazy"
+          width="100%"
+          height="100%"
+        >
+        <h2>{{ block.settings.heading }}</h2>
+        <div class="richText">{{ block.settings.rich_text }}</div>
+        {% if block.settings.show_button %}
+          <a href="{{ block.settings.button_link }}" class="customButton">{{ block.settings.button_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% schema %}
+{
+  "name": "Grid Image Gallery",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Collage Image",
+      "type": "collage_image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "collage_image",
+          "label": "Collage Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_button",
+          "label": "Show Button"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Learn More"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "select",
+          "id": "button_position",
+          "label": "Button Position",
+          "options": [
+            {
+              "value": "top-left",
+              "label": "Top Left"
+            },
+            {
+              "value": "top-right",
+              "label": "Top Right"
+            },
+            {
+              "value": "bottom-left",
+              "label": "Bottom Left"
+            },
+            {
+              "value": "bottom-right",
+              "label": "Bottom Right"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "rich_text",
+          "label": "Rich Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Grid Image Gallery"
+    }
+  ]
+}
+{% endschema %}
