@@ -76,6 +76,38 @@
       padding-top: 0.5rem;
     }
   }
+  
+{% if template == "index" %}
+.header-wrapper {
+    display: block;
+    position: absolute;
+    background-color: rgb(var(--color-background));
+    width: 100%;
+    background: none;
+}
+
+  .header__menu-item, .header__icon {
+    color: white;
+  }
+
+  .header__active-menu-item {
+    color: gold;
+  }
+
+  
+  {% else %}
+  
+  {% endif %}
+
+  .scrolled-past-header .header-wrapper,  .scrolled-past-header .header__menu-item, .scrolled-past-header .header__icon {
+    background-color: white;
+    color: black;
+  }
+
+    .scrolled-past-header  .header__active-menu-item {
+    color: black;
+  }
+  
 </style>
 
 {%- style -%}

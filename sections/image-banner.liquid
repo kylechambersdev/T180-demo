@@ -24,9 +24,25 @@
 {%- endif -%}
 
 {%- style -%}
-  #Banner-{{ section.id }}::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+      #Banner-{{ section.id }}::after {
+        opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+      }
+
+      .rte li {
+      list-style: none;
+      padding: 0 20px;
   }
+
+      .banner__text.rte.body li:before {
+        content: "";
+        width: 30px;
+        height: 20px;
+        position: absolute;
+        left: 15px;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Eo_circle_green_checkmark.svg/240px-Eo_circle_green_checkmark.svg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 {%- endstyle -%}
 
 {%- liquid
