@@ -63,8 +63,8 @@
         "color_scheme": "scheme-765d8609-e834-4da6-9d6e-95372d485185",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 8,
-        "padding_bottom": 8
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "main": {
@@ -102,7 +102,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
         },
@@ -249,20 +249,21 @@
       ],
       "settings": {
         "title": "The Transformation",
+        "subtitle": "subtitle",
         "column_alignment_title": "center",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "Button label",
+        "background_style": "none",
+        "button_label": "Learn more",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "multirow_gnPKDn": {
@@ -271,6 +272,7 @@
         "row_FgCPJE": {
           "type": "row",
           "settings": {
+            "image": "shopify:\/\/shop_images\/DSC00167-scaled.jpg",
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -281,6 +283,7 @@
         "row_dJdEU6": {
           "type": "row",
           "settings": {
+            "image": "shopify:\/\/shop_images\/T180Content-04433-1.jpg",
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -294,7 +297,59 @@
         "row_dJdEU6"
       ],
       "settings": {
-        "image_height": "medium",
+        "title": "Benefits",
+        "subtitle": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.",
+        "column_alignment_title": "center",
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_t4nXTd": {
+      "type": "multirow",
+      "blocks": {
+        "row_pgQf4x": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_iconos_-3.png",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_yXKJp9": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC00174-scaled.jpg",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_pgQf4x",
+        "row_yXKJp9"
+      ],
+      "settings": {
+        "title": "Features",
+        "subtitle": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.",
+        "column_alignment_title": "center",
+        "image_height": "adapt",
         "desktop_image_width": "medium",
         "heading_size": "h1",
         "text_style": "body",
@@ -341,9 +396,10 @@
         "button_9itp9m"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/banner-img.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -413,19 +469,102 @@
         "text": "Give customers details about the banner image(s) or content on the template."
       }
     },
-    "comparison_table_9ELtYk": {
-      "type": "comparison-table",
+    "comparison_table_with_image_ARCHAX": {
+      "type": "comparison-table-with-image",
       "blocks": {
-        "table_iqxqrC": {
+        "table_nhh4ty": {
           "type": "table",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
+            "title": "24\/7 Coverage",
+            "headingchecked1": true,
+            "headingchecked2": false,
+            "headingchecked3": false
+          }
+        },
+        "table_BYbcqd": {
+          "type": "table",
+          "settings": {
+            "title": "Table row",
+            "headingchecked1": true,
+            "headingchecked2": false,
+            "headingchecked3": false
+          }
+        },
+        "table_wUf8BP": {
+          "type": "table",
+          "disabled": true,
+          "settings": {
+            "title": "Table row",
+            "headingchecked1": true,
+            "headingchecked2": false,
+            "headingchecked3": false
+          }
+        },
+        "table_hHKeHt": {
+          "type": "table",
+          "settings": {
+            "title": "Table row",
+            "headingchecked1": true,
+            "headingchecked2": false,
+            "headingchecked3": false
+          }
+        },
+        "table_ncRUVV": {
+          "type": "table",
+          "settings": {
+            "title": "Table row",
+            "headingchecked1": true,
+            "headingchecked2": false,
+            "headingchecked3": false
+          }
+        },
+        "table_wAngBY": {
+          "type": "table",
+          "settings": {
+            "title": "Table row",
+            "headingchecked1": true,
+            "headingchecked2": false,
+            "headingchecked3": false
+          }
+        },
+        "table_YMjWU3": {
+          "type": "table",
+          "settings": {
+            "title": "Table row",
+            "headingchecked1": true,
+            "headingchecked2": false,
+            "headingchecked3": false
+          }
+        },
+        "table_Ka3cyb": {
+          "type": "table",
+          "settings": {
+            "title": "Table row",
+            "headingchecked1": true,
+            "headingchecked2": false,
+            "headingchecked3": false
+          }
+        },
+        "table_nyLzyq": {
+          "type": "table",
+          "settings": {
+            "title": "Table row",
+            "headingchecked1": true,
+            "headingchecked2": false,
+            "headingchecked3": false
           }
         }
       },
       "block_order": [
-        "table_iqxqrC"
+        "table_nhh4ty",
+        "table_BYbcqd",
+        "table_wUf8BP",
+        "table_hHKeHt",
+        "table_ncRUVV",
+        "table_wAngBY",
+        "table_YMjWU3",
+        "table_Ka3cyb",
+        "table_nyLzyq"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/DSC00174-scaled.jpg",
@@ -439,8 +578,11 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "heading1": "T180 Prof.",
+        "heading2": "C1",
+        "heading3": "C2"
       }
     },
     "faq_section_dp3kLK": {
@@ -562,48 +704,6 @@
             "image": "shopify:\/\/shop_images\/friends-splash-and-play-in-water.jpg",
             "link": ""
           }
-        },
-        "logo_image_Axjhn4": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/donut-float-fun.jpg",
-            "link": ""
-          }
-        },
-        "logo_image_cBz8cA": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/father-having-lots-of-fun-with-his-kids.jpg",
-            "link": ""
-          }
-        },
-        "logo_image_QTzi9d": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/surrounded-by-watermelon.jpg",
-            "link": ""
-          }
-        },
-        "logo_image_PBExcU": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fun-at-carnival.jpg",
-            "link": ""
-          }
-        },
-        "logo_image_4gGznf": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/giant-colorful-slide.jpg",
-            "link": ""
-          }
-        },
-        "logo_image_NQrJtA": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pineapple-party.jpg",
-            "link": ""
-          }
         }
       },
       "block_order": [
@@ -614,13 +714,7 @@
         "logo_image_eJNdbJ",
         "logo_image_y4fWw8",
         "logo_image_YdwqDc",
-        "logo_image_TRxP9r",
-        "logo_image_Axjhn4",
-        "logo_image_cBz8cA",
-        "logo_image_QTzi9d",
-        "logo_image_PBExcU",
-        "logo_image_4gGznf",
-        "logo_image_NQrJtA"
+        "logo_image_TRxP9r"
       ],
       "settings": {
         "title": "",
@@ -659,8 +753,8 @@
         "star_AF9iKn": {
           "type": "star",
           "settings": {
-            "reviews": 3,
-            "text": "\/5 based on #### reviews"
+            "reviews": 4.7,
+            "text": "\/5 based on 6329 reviews"
           }
         }
       },
@@ -675,8 +769,8 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 44,
+        "padding_bottom": 60
       }
     },
     "shipping_bar_3zzey7": {
@@ -742,8 +836,8 @@
         "color_scheme": "scheme-765d8609-e834-4da6-9d6e-95372d485185",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 8,
-        "padding_bottom": 8
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -754,9 +848,10 @@
     "logo_list_WmdJ64",
     "steps_xtqzrc",
     "multirow_gnPKDn",
+    "multirow_t4nXTd",
     "image_with_text_eAfhKb",
     "testimonials_section_gwwW6b",
-    "comparison_table_9ELtYk",
+    "comparison_table_with_image_ARCHAX",
     "faq_section_dp3kLK",
     "instagram_images_bmNNR3",
     "rich_text_with_reviews_EhPfrg",

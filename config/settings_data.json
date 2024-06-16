@@ -12,7 +12,7 @@
     "spacing_grid_vertical": 8,
     "animations_reveal_on_scroll": true,
     "animations_hover_elements": "none",
-    "buttons_border_thickness": 12,
+    "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 40,
     "buttons_shadow_opacity": 25,
@@ -113,7 +113,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -152,8 +152,8 @@
           "background": "#f3f3f3",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#121212",
-          "button_label": "#f3f3f3",
+          "button": "#000000",
+          "button_label": "#ffffff",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }

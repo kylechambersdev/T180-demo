@@ -29,7 +29,7 @@
   }
    {{ id }} button {
        width:100%;
-       border: 1px solid #dddddd1f;
+       border: 1px solid grey;
        border-right:0;
        border-top:0;
        padding: 10px;
@@ -56,7 +56,7 @@
        height:30px
   }
    {{ id }} td,{{ id }} th {
-       border:1px solid #dddddd1f;
+       border:1px solid black;
        padding:10px;
        empty-cells:show;
   }
@@ -71,10 +71,10 @@
        display:table-cell;
   }
    {{ id }} .bg-purple {
-       border-top:3px solid #A32362;
+       border-top:3px solid black;
   }
    {{ id }} .bg-blue {
-       border-top:3px solid #0097CF;
+       border-top:3px solid black;
   }
    {{ id }} .sep {
        background:#F5F5F5;
@@ -114,20 +114,20 @@
    {{ id }} table#solvvy_comparison_table th {
        color: #fff;
        font-size: 20px;
-       background: #a470afe0;
+       background: darkgrey;
   }
    {{ id }} table#solvvy_comparison_table th:first-child {
        background: transparent;
   }
    {{ id }} table#solvvy_comparison_table td {
-       background: rgb(164, 112, 175);
+       background: darkgrey;
   }
    {{ id }} table#solvvy_comparison_table td {
        padding: 10px;
        font-size: 12px;
   }
    {{ id }} table#solvvy_comparison_table tr td:first-child {
-       background: #592C85;
+       background: grey;
        color: #fff;
        text-align: center;
   }
@@ -183,91 +183,57 @@
             id="ImageWithText--{{ section.id }}"
             class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
           >
-            {%- for block in section.blocks -%}
-              {% case block.type %}
-                {%- when 'table' -%}
-                  <table id="solvvy_comparison_table">
-                    <thead>
+            <table id="solvvy_comparison_table">
+              <thead>
+                <tr>
+                  <th class="hide"></th>
+                  <th class="default">{{ section.settings.heading1 }}</th>
+                  <th class="">{{ section.settings.heading2 }}</th>
+                  <th class="">{{ section.settings.heading3 }}</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {%- for block in section.blocks -%}
+                  {% case block.type %}
+                    {%- when 'table' -%}
                       <tr>
-                        <th class="hide"></th>
-                        <th class="default">Brand Logo</th>
-                        <th class="">C1</th>
-                        <th class="">C2</th>
+                        <td>{{ block.settings.title }}</td>
+                        <td>
+                          <span class="tick">
+                            {%- if block.settings.headingchecked1 %}&#10004{% else %}&#10006;{% endif -%}
+                          </span>
+                        </td>
+                        <td class="default">
+                          <span class="tick">
+                            {%- if block.settings.headingchecked2 %}&#10004{% else %}&#10006;{% endif -%}
+                          </span>
+                        </td>
+                        <td class="default">
+                          <span class="tick">
+                            {%- if block.settings.headingchecked3 %}&#10004{% else %}&#10006;{% endif -%}
+                          </span>
+                        </td>
                       </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>24/7 Coverage</td>
-                        <td><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                      </tr>
-                      <tr>
-                        <td>Faster Resolution Time</td>
-                        <td><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                      </tr>
-                      <tr>
-                        <td>Accurate Answers with real AI & NLP</td>
-                        <td><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                      </tr>
-                      <tr>
-                        <td>End-to-End Reporting & Analytics</td>
-                        <td><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10004;</span></td>
-                      </tr>
-                      <tr>
-                        <td>Fast Time to ROI</td>
-                        <td><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10004;</span></td>
-                      </tr>
-                      <tr>
-                        <td>Low Total Cost of Ownership</td>
-                        <td><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                      </tr>
-                      <tr>
-                        <td>Omni-Channel Support & Intelligent Routing</td>
-                        <td><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                      </tr>
-                      <tr>
-                        <td>Customizable by Persona</td>
-                        <td><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10004;</span></td>
-                      </tr>
-                      <tr>
-                        <td>on-Brand Experiences</td>
-                        <td><span class="tick">&#10004;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                        <td class="default"><span class="tick">&#10006;</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                {%- when 'button' -%}
-                  {%- if block.settings.button_label != blank -%}
-                    <a
-                      {% if block.settings.button_link == blank %}
-                        role="link" aria-disabled="true"
-                      {% else %}
-                        href="{{ block.settings.button_link }}"
-                      {% endif %}
-                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-                      {{ block.shopify_attributes }}
-                    >
-                      {{ block.settings.button_label | escape }}
-                    </a>
-                  {%- endif -%}
-              {%- endcase -%}
-            {%- endfor -%}
+
+                    {%- when 'button' -%}
+                      {%- if block.settings.button_label != blank -%}
+                        <a
+                          {% if block.settings.button_link == blank %}
+                            role="link" aria-disabled="true"
+                          {% else %}
+                            href="{{ block.settings.button_link }}"
+                          {% endif %}
+                          class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                          {{ block.shopify_attributes }}
+                        >
+                          {{ block.settings.button_label | escape }}
+                        </a>
+                      {%- endif -%}
+                  {%- endcase -%}
+                {%- endfor -%}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -489,37 +455,61 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    }
+    },
+            {
+          "type": "text",
+          "id": "heading1",
+          "default": "Heading 1",
+          "label": "Heading 1",
+          "info": "Headers of the comparison table"
+        },
+                {
+          "type": "text",
+          "id": "heading2",
+          "default": "Heading 2",
+          "label": "Heading 2",
+          "info": "Headers of the comparison table"
+        },
+                {
+          "type": "text",
+          "id": "heading3",
+          "default": "Heading 3",
+          "label": "Heading 3",
+          "info": "Headers of the comparison table"
+        }
   ],
   "blocks": [
 
     {
       "type": "table",
-      "name": "t:sections.image-with-text.blocks.text.name",
-      "limit": 1,
+      "name": "Table",
       "settings": [
-        {
-          "type": "richtext",
-          "id": "text",
-          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-          "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+                      {
+          "type": "text",
+          "id": "title",
+          "default": "Table row",
+          "label": "Title",
+          "info": "Title of the row selected"
         },
-        {
-          "type": "select",
-          "id": "text_style",
-          "options": [
-            {
-              "value": "body",
-              "label": "t:sections.image-with-text.blocks.text.settings.text_style.options__1.label"
-            },
-            {
-              "value": "subtitle",
-              "label": "t:sections.image-with-text.blocks.text.settings.text_style.options__2.label"
-            }
-          ],
-          "default": "body",
-          "label": "t:sections.image-with-text.blocks.text.settings.text_style.label"
-        }
+      {
+      "type": "checkbox",
+"id": "headingchecked1",
+"label": "Heading 1 is checked",
+"default": false
+      },
+          {
+      "type": "checkbox",
+"id": "headingchecked2",
+"label": "Heading 2 is checked",
+"default": false
+      },
+          {
+      "type": "checkbox",
+"id": "headingchecked3",
+"label": "Heading 3 is checked",
+"default": false
+      }
+
       ]
     },
     {

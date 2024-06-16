@@ -145,6 +145,7 @@
       ],
       "settings": {
         "title": "The Transformation",
+        "subtitle": "subtitle",
         "column_alignment_title": "center",
         "heading_size": "h1",
         "image_width": "full",
@@ -152,7 +153,7 @@
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
@@ -326,6 +327,7 @@
       ],
       "settings": {
         "title": "Collections",
+        "column_alignment_title": "center",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,

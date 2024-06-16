@@ -1293,6 +1293,7 @@ button.shopify-payment-button__button--unbranded {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
+  padding: 20px 40px;
 }
 
 .button--tertiary {
@@ -1316,7 +1317,7 @@ button.shopify-payment-button__button--unbranded {
 .customer button.disabled,
 .quantity__button.disabled {
   cursor: not-allowed;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 
 .button--full-width {
@@ -2752,7 +2753,7 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground)/*, 0.75*/);
 }
 
 .header__menu-item:hover {
@@ -2764,7 +2765,8 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover span {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
+  opacity: .5;
   text-underline-offset: 0.3rem;
 }
 
