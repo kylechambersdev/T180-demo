@@ -163,14 +163,27 @@
   margin-top: 0.25rem;
 }
 
+.inline-qty {
+  display: flex;
+  align-items: center;
+}
+
 /* Form Elements */
 .product-form__input {
-  flex: 0 0 100%;
+  /*flex: 0 0 100%;*/
   padding: 0;
-  margin: 0 0 1.2rem 0;
-  max-width: 44rem;
-  min-width: fit-content;
+  margin: 0 2rem 0rem 0;
+  /*max-width: 44rem;
+  min-width: fit-content;*/
   border: none;
+}
+ /* to cause the Add to Cart button to not wrap text*/
+.product-form__buttons button span {
+    text-wrap: nowrap;
+}
+
+.product-form__buttons button {
+    padding: 10px 40px;
 }
 
 .product-form__input .form__label {
